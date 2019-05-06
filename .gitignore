@@ -1,0 +1,7 @@
+.gradle/
+gradle/
+build/
+bin/
+EvoSuite/.evosuite/
+/.metadata/
+.recommenders/
