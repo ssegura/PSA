@@ -1,0 +1,87 @@
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-left: 30px;
+}
+
+
+/* Layout */
+
+.container {
+	width:500px;
+}
+
+.bottom_links {
+	text-align: right;
+	margin-top: 10px;
+}
+
+
+/* Headers */
+
+h1 {
+	color: #4CAF50;
+	font-size: 2em;
+}
+
+
+/* Tables */
+#agenda {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#agenda td, agenda th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#agenda tr:nth-child(even){background-color: #f2f2f2;}
+
+#agenda tr:hover {background-color: #ddd;}
+
+#agenda th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Links */
+
+.button, .button:visited {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover, .button:active  {
+    background: #3e8e41;
+    text-decoration: none;
+}
+
+
+/* Inputs */
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
