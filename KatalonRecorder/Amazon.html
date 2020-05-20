@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Amazon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Title</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com/<datalist><option>https://www.amazon.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTitle</td><td>Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more<datalist><option>Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TodaysDeals</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com/<datalist><option>https://www.amazon.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTextPresent</td><td><datalist><option>link=Today's Deals</option><option>//div[@id='nav-xshop']/a</option><option>//a[contains(@href, '/international-sales-offers/b/?ie=UTF8&amp;node=15529609011&amp;ref_=nav_navm_intl_deal_btn')]</option><option>//div[3]/div[2]/div/a</option><option></option></datalist></td><td>Today's Deals</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MakeMoneyWithUs</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com/<datalist><option>https://www.amazon.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='navFooter']/div/div/div[3]/div<datalist><option>//div[@id='navFooter']/div/div/div[3]/div</option><option>//div[4]/div/div/div[3]/div</option></datalist></td><td>Make Money with Us</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Currency</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com/<datalist><option>https://www.amazon.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a[@id='icp-touch-link-cop']/span[2]<datalist><option>//a[@id='icp-touch-link-cop']/span[2]</option><option>//span[2]/div/a[2]/span[2]</option><option>css=#icp-touch-link-cop &gt; span.icp-color-base</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=a-autoid-0-announce<datalist><option>id=a-autoid-0-announce</option><option>//span[@id='a-autoid-0-announce']</option><option>//span[@id='a-autoid-0']/span/span</option><option>//span/span/span/span</option><option>css=#a-autoid-0-announce</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=icp-sc-dropdown_2<datalist><option>id=icp-sc-dropdown_2</option><option>link=€ - EUR - Euro</option><option>//a[contains(text(),'€ - EUR - Euro')]</option><option>//a[@id='icp-sc-dropdown_2']</option><option>//div[@id='a-popover-3']/div/div/ul/li[3]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[3]</option><option>//div[3]/div/div/ul/li[3]/a</option><option>css=#icp-sc-dropdown_2</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@type='submit'])[2]<datalist><option>xpath=(//input[@type='submit'])[2]</option><option>//span[@id='icp-btn-save']/span/input</option><option>//span/input</option><option>css=input.a-button-input</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//a[@id='icp-touch-link-cop']/span[2]<datalist><option>//a[@id='icp-touch-link-cop']/span[2]</option><option>//span[2]/div/a[2]/span[2]</option><option>css=#icp-touch-link-cop &gt; span.icp-color-base</option></datalist></td><td>EUR - Euro</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DefaultOrdering</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com/?currency=EUR</option><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>tablet</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>assertValue</td><td>id=s-result-sort-select<datalist><option>//span[@id='a-autoid-0-announce']/span[2]</option><option>//span/span/span/span[2]</option><option>css=span.a-dropdown-prompt</option><option>id="s-result-sort-select"</option><option>id=s-result-sort-select</option></datalist></td><td>relevanceblender</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SearchTitle</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com/ref=nav_logo</option><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>tablet</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTitle</td><td>Amazon.com : tablet<datalist><option>Amazon.com: tablet</option><option>Amazon.com : tablet</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SearchTitleVariable</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com/ref=nav_logo</option><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>store</td><td>tablet<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option><option>tablet</option></datalist></td><td>keyword</td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>${keyword}</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>assertTitle</td><td>Amazon.com : ${keyword}<datalist><option>Amazon.com: tablet</option><option>Amazon.com: ${keyword}</option><option>Amazon.com : ${keyword}</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MetamorphicTestFilter</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com/ref=nav_logo</option><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>tablet</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>result</td>
+</tr>
+<tr><td>click</td><td>id=searchDropdownBox<datalist><option>id=searchDropdownBox</option><option>name=url</option><option>//select[@id='searchDropdownBox']</option><option>//div[@id='nav-search-dropdown-card']/div/select</option><option>//select</option><option>css=#searchDropdownBox</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>id=searchDropdownBox<datalist><option>id=searchDropdownBox</option><option>name=url</option><option>//select[@id='searchDropdownBox']</option><option>//div[@id='nav-search-dropdown-card']/div/select</option><option>//select</option><option>css=#searchDropdownBox</option></datalist></td><td>label=Electronics</td>
+</tr>
+<tr><td>click</td><td>id=searchDropdownBox<datalist><option>id=searchDropdownBox</option><option>name=url</option><option>//select[@id='searchDropdownBox']</option><option>//div[@id='nav-search-dropdown-card']/div/select</option><option>//select</option><option>css=#searchDropdownBox</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@value='Go']<datalist><option>//input[@value='Go']</option><option>//div[@id='nav-search']/form/div[2]/div/input</option><option>//input</option><option>css=input.nav-input</option></datalist></td><td></td>
+</tr>
+<tr><td>assertNotText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>${result}</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">MetamorphicTestSort</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com/ref=nav_logo</option><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>tablet</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=a-autoid-0-announce<datalist><option>id=a-autoid-0-announce</option><option>//span[@id='a-autoid-0-announce']</option><option>//span[@id='a-autoid-0']/span/span</option><option>//span/span/span/span</option><option>css=#a-autoid-0-announce</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=s-result-sort-select_1<datalist><option>id=s-result-sort-select_1</option><option>link=exact:Price: Low to High</option><option>//a[contains(text(),'Price: Low to High')]</option><option>//a[@id='s-result-sort-select_1']</option><option>//div[@id='a-popover-4']/div/div/ul/li[2]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[33]</option><option>//div[3]/div/div/ul/li[2]/a</option><option>css=#s-result-sort-select_1</option><option>id=s-result-sort-select_3</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>result</td>
+</tr>
+<tr><td>click</td><td>id=a-autoid-1-announce<datalist><option>id=a-autoid-0-announce</option><option>//span[@id='a-autoid-0-announce']</option><option>//span[@id='a-autoid-0']/span/span</option><option>//span/span/span/span</option><option>css=#a-autoid-0-announce</option><option>id=a-autoid-1-announce</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=s-result-sort-select_2<datalist><option>id=s-result-sort-select_2</option><option>link=exact:Price: High to Low</option><option>//a[contains(text(),'Price: High to Low')]</option><option>//a[@id='s-result-sort-select_2']</option><option>//div[@id='a-popover-4']/div/div/ul/li[3]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[14]</option><option>//div[4]/div/div/ul/li[3]/a</option><option>css=#s-result-sort-select_2</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>${result}</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DataDrivenMetamorphicTestSort</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://www.amazon.com<datalist><option>https://www.amazon.com</option></datalist></td><td></td>
+</tr>
+<tr><td>loadVars</td><td>testData.csv<datalist><option>testData.csv</option><option>C:\Users\segura\OneDrive - UNIVERSIDAD DE SEVILLA\Clases\ERASMUS+\2019\SnT_GUI_Testing\Katalon\testData.csv</option><option>"C:\Users\segura\OneDrive - UNIVERSIDAD DE SEVILLA\Clases\ERASMUS+\2019\SnT_GUI_Testing\Katalon\testData.csv"</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=twotabsearchtextbox<datalist><option>id=twotabsearchtextbox</option><option>name=field-keywords</option><option>//input[@id='twotabsearchtextbox']</option><option>//div[@id='nav-search']/form/div[3]/div/input</option><option>//div[3]/div/input</option><option>css=#twotabsearchtextbox</option></datalist></td><td>${query}</td>
+</tr>
+<tr><td>submit</td><td>name=site-search<datalist><option>name=site-search</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=a-autoid-0-announce<datalist><option>//span[@id='a-autoid-0-announce']/span[2]</option><option>//span/span/span/span[2]</option><option>css=span.a-dropdown-prompt</option><option>id=a-autoid-0-announce</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=s-result-sort-select_1<datalist><option>id=s-result-sort-select_1</option><option>link=exact:Price: Low to High</option><option>//a[contains(text(),'Price: Low to High')]</option><option>//a[@id='s-result-sort-select_1']</option><option>//div[@id='a-popover-4']/div/div/ul/li[2]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[33]</option><option>//div[3]/div/div/ul/li[2]/a</option><option>css=#s-result-sort-select_1</option></datalist></td><td></td>
+</tr>
+<tr><td>storeText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>result</td>
+</tr>
+<tr><td>click</td><td>id=a-autoid-1-announce<datalist><option>//span[@id='a-autoid-0-announce']/span[2]</option><option>//span/span/span/span[2]</option><option>css=span.a-dropdown-prompt</option><option>id=a-autoid-1-announce</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=s-result-sort-select_2<datalist><option>id=s-result-sort-select_2</option><option>link=exact:Price: High to Low</option><option>//a[contains(text(),'Price: High to Low')]</option><option>//a[@id='s-result-sort-select_2']</option><option>//div[@id='a-popover-4']/div/div/ul/li[3]/a</option><option>xpath=(//a[contains(@href, 'javascript:void(0)')])[14]</option><option>//div[4]/div/div/ul/li[3]/a</option><option>css=#s-result-sort-select_2</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>${query}<datalist><option>${query}</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]<datalist><option>//div[@id='search']/span/span/h1/div/div/div/div/span</option><option>//h1/div/div/div/div/span</option><option>css=div.a-section.a-spacing-small.a-spacing-top-small &gt; span</option><option>//*[@id="search"]/span/div/span/h1/div/div[1]/div/div/span[1]</option></datalist></td><td>${result}</td>
+</tr>
+<tr><td>endLoadVars</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -16,20 +16,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import static java.time.Duration.ofMillis;
-/**
- * 
- * @author Sergio Segura
- * 
- * 	Interesante: 
- * 		- Ver la enorme diferencia de tiempo al crear el generador una vez o crearlo en cada prueba
- *		- Problema del oráculo: Ej. ¿Cómo podríamos comprobar que la herramienta devuelve sólo verbos?
- **	
- *
- */
+
 @DisplayName("Random word generation")
 class RandomEnglishWordGeneratorTest {
-
-
+	
 	static RandomEnglishWordGenerator gen = new RandomEnglishWordGenerator();;
 	
 	@BeforeAll
@@ -38,6 +28,7 @@ class RandomEnglishWordGeneratorTest {
 	}
 	
 	@DisplayName("1-3 words")
+	@Tag("parameterized")
 	@RepeatedTest(value=10, name="{displayName} {currentRepetition}/{totalRepetitions}")
 	void testRandomOneToThreeWords(TestReporter reporter) {
 		// Arrange
@@ -48,7 +39,7 @@ class RandomEnglishWordGeneratorTest {
 		
 		// Act
 		String value = gen.nextValue();
-		reporter.publishEntry("Word",value);		// OJO: No aparece en el report (no soportado por Gradle). Sí aparece stdout
+		reporter.publishEntry("Word",value);		
 		
 		// Assert
 		int nWords = numberOfWords(value);
@@ -121,6 +112,7 @@ class RandomEnglishWordGeneratorTest {
 	@Test
 	@DisplayName("1-3 words. Timeout 100ms")
 	void testRandomOneToThreeWordsTimeout() {
+		// Arrange
 		// Arrange
 		int minWords = 1;
 		int maxWords = 3;

@@ -1,0 +1,62 @@
+plugins {
+	id 'java'
+	id 'jacoco'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'net.sf.extjwnl', name: 'extjwnl', version: '1.9.4'
+	compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+	compile group: 'net.sf.extjwnl', name: 'extjwnl-data-wn31', version: '1.2'
+	testCompile group:'org.junit.jupiter', name:'junit-jupiter-api', version:'5.5.1'
+	testCompile group:'org.junit.jupiter', name:'junit-jupiter-params', version:'5.5.1'
+	testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.4.1'
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+	testRuntime group:'org.junit.jupiter', name:'junit-jupiter-engine', version:'5.5.1'
+}
+
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled true
+    }
+}
+
+jacocoTestCoverageVerification {
+  violationRules {
+    
+    rule {
+      element = 'CLASS'
+        limit {
+          counter = 'LINE'
+          value = 'COVEREDRATIO'
+          minimum = 0.6
+      }
+    }
+    
+    rule {
+      element = 'CLASS'
+      includes = [
+          'psa.math.*'
+      ]
+      limit {
+        counter = 'BRANCH'
+        value = 'COVEREDRATIO'
+        minimum = 0.8
+      }
+    }
+  }
+  
+}
+
+test {
+	useJUnitPlatform() {}	
+}
+
+wrapper {
+	gradleVersion = '6.0'
+}
