@@ -8,12 +8,12 @@ repositories {
 }
 
 dependencies {
-	testCompile group:'org.junit.jupiter', name:'junit-jupiter-api', version:'5.5.1'
-	testCompile group:'org.junit.jupiter', name:'junit-jupiter-params', version:'5.5.1'
-	testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.4.1'
-	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.23.4'
-	testCompile group: 'org.mockito', name: 'mockito-junit-jupiter', version: '2.23.4'
-	testRuntime group:'org.junit.jupiter', name:'junit-jupiter-engine', version:'5.5.1'
+	testImplementation group:'org.junit.jupiter', name:'junit-jupiter-api', version:'5.10.2'
+	testImplementation group:'org.junit.jupiter', name:'junit-jupiter-params', version:'5.10.2'
+	testImplementation group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.10.2'
+	testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.10.0'
+	testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '5.10.0'
+	testRuntimeOnly group:'org.junit.jupiter', name:'junit-jupiter-engine', version:'5.10.1'
 }
 
 test {
@@ -21,6 +21,6 @@ test {
 }
 	
 wrapper {
-	gradleVersion = '6.0'
+	gradleVersion = '7.8'
 }
 
