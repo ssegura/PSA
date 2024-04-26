@@ -8,14 +8,14 @@ repositories {
 }
 
 dependencies {
-	compile group: 'net.sf.extjwnl', name: 'extjwnl', version: '1.9.4'
-	compile group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
-	compile group: 'net.sf.extjwnl', name: 'extjwnl-data-wn31', version: '1.2'
-	testCompile group:'org.junit.jupiter', name:'junit-jupiter-api', version:'5.5.1'
-	testCompile group:'org.junit.jupiter', name:'junit-jupiter-params', version:'5.5.1'
-	testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.4.1'
-	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
-	testRuntime group:'org.junit.jupiter', name:'junit-jupiter-engine', version:'5.5.1'
+	implementation group: 'net.sf.extjwnl', name: 'extjwnl', version: '1.9.4'
+	implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+	implementation group: 'net.sf.extjwnl', name: 'extjwnl-data-wn31', version: '1.2'
+	testImplementation group:'org.junit.jupiter', name:'junit-jupiter-api', version:'5.10.2'
+	testImplementation group:'org.junit.jupiter', name:'junit-jupiter-params', version:'5.10.2'
+	testImplementation group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.10.2'
+	testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.8.4'
+	testRuntimeOnly group:'org.junit.jupiter', name:'junit-jupiter-engine', version:'5.10.1'
 }
 
 test {
@@ -28,9 +28,9 @@ test {
 	
     // Maximum number of forked test processes to execute in parallel
     maxParallelForks = Runtime.runtime.availableProcessors()
-    // maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1  // Opción recomendada por Gradle
+   //  maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1  // Opciï¿½n recomendada por Gradle
 }
 
 wrapper {
-	gradleVersion = '6.0'
+	gradleVersion = '8.7'
 }
